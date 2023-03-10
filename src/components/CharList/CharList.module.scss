@@ -1,0 +1,8 @@
+.list {
+  margin: 0 auto;
+  padding: 40px 5px 3px 5px;
+  max-width: 1020px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}

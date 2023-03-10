@@ -1,0 +1,2 @@
+export const ADD_TO_CHARS = 'ADD_TO_CHARS';
+export const ADD_TO_CHARS_FAILTURE = 'ADD_TO_CHARS_FAILTURE';
