@@ -1,0 +1,31 @@
+.infostring {
+  width: 25.813rem;
+  padding: 9px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #081f32;
+  }
+
+  &__value {
+    margin: 0;
+    padding: 0 0 2px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6e798c;
+  }
+
+  &__box {
+    width: 100%;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,17 @@
+.container {
+  padding: 23px 54px 142px 54px;
+
+  &__inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}

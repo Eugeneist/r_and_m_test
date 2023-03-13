@@ -1,0 +1,22 @@
+.container {
+  padding: 81px 45px 183px 45px;
+
+  &__inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logobox {
+  width: 100%;
+  padding-bottom: 15px;
+  text-align: center;
+
+  &__logo {
+    width: 600px;
+    margin: 0 auto;
+  }
+}

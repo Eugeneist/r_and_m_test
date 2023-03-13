@@ -1,11 +1,13 @@
-import './App.css';
-import { CharList } from './components';
+import { Routes, Route } from 'react-router-dom';
+import { MainPage, CharPage } from './pages';
 
 function App() {
   return (
-    <div className="App">
-      <CharList />
-    </div>
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/character/:id" element={<CharPage />} />
+      {/* <Route path="*" element={<NotFound />} /> */}
+    </Routes>
   );
 }
 
