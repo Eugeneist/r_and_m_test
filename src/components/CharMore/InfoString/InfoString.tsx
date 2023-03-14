@@ -8,14 +8,14 @@ import { useCharOrigin } from '../../../hooks';
 const InfoString: React.FC<iInfoStringProps> = ({ title, value }) => {
   const { locName }: iCharOriginResponse = useCharOrigin(value);
 
-  if (value === '') {
-    value = 'Unknown';
-  }
-
   if (title === 'Origin') {
     if (value.startsWith('https')) {
       value = String(locName);
     }
+  }
+
+  if (value === '' || value === 'unknown') {
+    value = 'Unknown';
   }
 
   return (
