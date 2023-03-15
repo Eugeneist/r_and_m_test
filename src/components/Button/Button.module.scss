@@ -4,15 +4,15 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 10px;
-  transition: all 0.4s;
+  border-radius: 15px;
+  transition: all 0.25s;
 
   &:active {
-    background-color: rgba($color: #000000, $alpha: 0.9);
+    background-color: rgba($color: #61d741, $alpha: 0.9);
   }
 
   &:hover {
-    background-color: rgba($color: #000000, $alpha: 0.2);
-    transition: all 0.4s;
+    background-color: rgba($color: #61d741, $alpha: 0.8);
+    transition: all 0.25s;
   }
 }

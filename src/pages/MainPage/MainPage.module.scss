@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   &__inner {
     max-width: 1600px;

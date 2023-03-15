@@ -5,3 +5,5 @@ export { Error } from './Error';
 export { SearchBar } from './SearchBar';
 export { CharMore } from './CharMore';
 export { Button } from './Button';
+export { Header } from './Header';
+export { Modal } from './Modal';

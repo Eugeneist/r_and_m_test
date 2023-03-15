@@ -1,0 +1,43 @@
+@mixin modalbox {
+  position: absolute;
+  z-index: 99;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 5px;
+  top: 62px;
+  right: 27px;
+  background-color: #fff;
+  transition: all 0.1s ease-out;
+}
+
+.modal {
+  position: relative;
+
+  &__box_active {
+    visibility: visible;
+    @include modalbox;
+  }
+
+  &__box_closed {
+    visibility: hidden;
+    @include modalbox;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 18px;
+    margin: 0;
+    padding: 11px 10px 10px 10px;
+
+    &:hover {
+      background-color: #61d741;
+      color: #fff;
+      transition: all 0.25s;
+    }
+  }
+}
