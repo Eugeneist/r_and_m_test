@@ -16,14 +16,15 @@ export interface iCharactersProps {
 export interface iAxiosResponse {
   info: object;
   results: iCharactersProps[];
+  filtered?: iCharactersProps[];
 }
 
 export interface useAxiosResponseProps {
   state: iCharactersProps[];
   isLoading: boolean;
   error?: boolean;
-  setLimit: any;
-  limit: number;
+  setPage: any;
+  page: number;
 }
 
 export interface iCharCardProps {

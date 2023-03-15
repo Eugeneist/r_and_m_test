@@ -45,6 +45,15 @@
     color: #fff;
     transition: all 0.4s;
   }
+
+  @media (max-width: 900px) {
+    width: 19.5rem;
+    height: 19.25rem;
+
+    &__imagebox {
+      height: 14.5rem;
+    }
+  }
 }
 
 .nav {

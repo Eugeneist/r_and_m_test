@@ -9,7 +9,7 @@ const CharPage = () => {
 
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.container__buttonbox}>
         <NavLink className={styles.nav} to={`/`}>
           <Button children={<Back />} />
         </NavLink>

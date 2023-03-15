@@ -8,15 +8,19 @@ import { AppDispatch, RootState } from '../../redux/store/store';
 const useAxiosResponse = () => {
   const dispatch = useDispatch<AppDispatch>();
 
-  const state = useSelector((state: RootState) => state.charsReducers.results);
+  const state = useSelector((state: RootState) =>
+    state.charsReducers.filtered
+      ? state.charsReducers.filtered
+      : state.charsReducers.results,
+  );
   const [error, setError] = useState();
   const [isLoading, setLoading] = useState(true);
 
-  const [limit, setLimit] = useState(12);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     axios
-      .get(`api/character?_limit=${limit}`)
+      .get(`api/character?page=${page}`)
       .then((data: AxiosResponse) => {
         dispatch(addToChars(data));
       })
@@ -26,9 +30,9 @@ const useAxiosResponse = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, [dispatch, limit]);
+  }, [dispatch, page]);
 
-  return { state, error, isLoading, setLoading, limit, setLimit };
+  return { state, error, isLoading, setLoading, page, setPage };
 };
 
 export default useAxiosResponse;

@@ -1,5 +1,4 @@
 .charmore {
-  width: 25.813rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -8,6 +7,7 @@
 
   &__image {
     border: 5px solid #f2f2f7;
+    width: 18.75rem;
     border-radius: 150px;
     margin-bottom: 10px;
   }
@@ -16,6 +16,7 @@
     font-weight: 400;
     font-size: 48px;
     line-height: 56px;
+    text-align: center;
     margin: 0;
     padding: 0 0 48px 0;
   }
@@ -27,5 +28,24 @@
     color: #8e8e93;
     margin: 0;
     padding: 0 0 48px 0;
+  }
+
+  @media (max-width: 640px) {
+    &__name {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    &__image {
+      width: 9.375rem;
+    }
+
+    &__infotitle {
+      align-self: start;
+    }
+
+    &__infobox {
+      width: 100%;
+    }
   }
 }

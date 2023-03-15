@@ -60,4 +60,16 @@
     overflow: visible;
     color: rgba(0, 0, 0, 0.54);
   }
+
+  @media (max-width: 900px) {
+    &__form {
+      width: 39rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__form {
+      width: 17.5rem;
+    }
+  }
 }

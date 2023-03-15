@@ -21,7 +21,7 @@ const CharMore: React.FC<iCharMoreProps> = ({ id }) => {
         alt="portrait"
       />
       <h2 className={styles.charmore__name}>{charInfo?.name}</h2>
-      <div>
+      <div className={styles.charmore__infobox}>
         <h5 className={styles.charmore__infotitle}>Informations</h5>
       </div>
       <InfoString title={'Gender'} value={String(charInfo.gender)} />
