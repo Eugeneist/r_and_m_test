@@ -1,10 +1,6 @@
 import { LOGIN_SUCCESS, LOGOUT } from '../actionTypes/charsTypes';
 
-const user = JSON.parse(localStorage.getItem('user') || `{}`);
-
-const initialState = user
-  ? { isLoggedIn: true, user }
-  : { isLoggedIn: false, user: null };
+const initialState = { isLoggedIn: false, user: null };
 
 const loginReducers = (state = initialState, action: any) => {
   const { type, payload } = action;

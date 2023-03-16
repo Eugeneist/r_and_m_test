@@ -86,4 +86,25 @@
     border-radius: 150px;
     margin-right: 10px;
   }
+
+  &__name {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: 500px) {
+    // &__inner {
+    //   flex-direction: column;
+    // }
+
+    &__profile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__avatar {
+      margin: 0;
+    }
+  }
 }

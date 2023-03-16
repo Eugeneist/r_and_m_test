@@ -8,9 +8,10 @@ import styles from './Header.module.scss';
 
 const Header: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const login = useSelector((state: RootState) => state.loginReducers.user);
-
-  console.log(login);
+  const user = useSelector((state: RootState) => state.loginReducers.user);
+  const login = useSelector(
+    (state: RootState) => state.loginReducers.isLoggedIn,
+  );
 
   const handleLogout = () => {
     dispatch(logout());
@@ -27,15 +28,15 @@ const Header: React.FC = () => {
           </NavLink>
         </div>
         <div className={styles.header__login}>
-          {login !== null && login.length > 0 ? (
+          {login ? (
             <div className={styles.header__loginbox}>
               <div className={styles.header__profile}>
                 <img
                   className={styles.header__avatar}
-                  src={login.picture}
+                  src={user.picture}
                   alt="avatar"
                 />
-                <p>{login.name}</p>
+                <p className={styles.header__name}>{user.name}</p>
               </div>
               <button
                 className={styles.header__loginbtn}
