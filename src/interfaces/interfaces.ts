@@ -73,17 +73,28 @@ export interface iButton {
   children: React.ReactNode;
 }
 
-export interface iCharOrigin {
-  id?: number;
-  name?: string;
-  type?: string;
-  dimension?: string;
-  residents?: string[];
-  url?: string;
-  created?: string;
+export interface iModal {
+  children: React.ReactNode;
 }
 
-export interface iCharOriginResponse {
-  locName?: string;
-  charOrigin?: iCharOrigin;
+export interface iCredential {
+  clientId: string;
+  credential: string;
+  select_by: string;
+}
+
+export interface iLogin {
+  aud: string;
+  azp: string;
+  email: string;
+  email_verified: boolean;
+  exp: number;
+  given_name: string;
+  iat: number;
+  iss: string;
+  jti: string;
+  name: string;
+  nbf: number;
+  picture: string;
+  sub: string;
 }

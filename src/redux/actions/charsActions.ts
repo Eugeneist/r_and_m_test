@@ -3,8 +3,11 @@ import {
   ADD_FILTERED_CHARS,
   ADD_TO_CHARS_FAILTURE,
   CLEAR_FILTERED_CHARS,
+  LOGIN_SUCCESS,
+  LOGOUT,
 } from '../actionTypes/charsTypes';
 import { AxiosResponse } from 'axios';
+import { iLogin } from '../../interfaces/interfaces';
 
 export const addToChars = (data: AxiosResponse) => {
   return {
@@ -30,3 +33,14 @@ export const addToCharsError = (error: AxiosResponse) => {
     payload: error,
   };
 };
+
+export const login = (data: unknown) => {
+  return {
+    type: LOGIN_SUCCESS,
+    payload: data,
+  };
+};
+
+export const logout = () => ({
+  type: LOGOUT,
+});

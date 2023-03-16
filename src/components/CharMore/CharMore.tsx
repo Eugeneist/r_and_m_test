@@ -9,10 +9,6 @@ import styles from './CharMore.module.scss';
 const CharMore: React.FC<iCharMoreProps> = ({ id }) => {
   const { charInfo }: iSingleCharResponse = useSingleCharResponse(id);
 
-  let origin = charInfo.origin?.url
-    ? charInfo.origin?.url
-    : charInfo.origin?.name;
-
   return (
     <div className={styles.charmore}>
       <img
@@ -27,7 +23,7 @@ const CharMore: React.FC<iCharMoreProps> = ({ id }) => {
       <InfoString title={'Gender'} value={String(charInfo.gender)} />
       <InfoString title={'Status'} value={String(charInfo.status)} />
       <InfoString title={'Specie'} value={String(charInfo.species)} />
-      <InfoString title={'Origin'} value={String(origin)} />
+      <InfoString title={'Origin'} value={String(charInfo.origin?.name)} />
       <InfoString title={'Type'} value={String(charInfo.type)} />
     </div>
   );

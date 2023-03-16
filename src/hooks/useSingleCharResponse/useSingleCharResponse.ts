@@ -10,7 +10,9 @@ const useSingleCharResponse = (id: number) => {
 
   useEffect(() => {
     axios
-      .get(`api/character/${id}`)
+      .get(`api/character/${id}`, {
+        headers: { 'Access-Control-Allow-Origin': 'http://localhost:3000' },
+      })
       .then((data: AxiosResponse) => {
         setCharInfo(data);
       })

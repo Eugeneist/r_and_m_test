@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import { iModal } from '../../interfaces/interfaces';
 import styles from './Modal.module.scss';
 
-const Modal: React.FC = () => {
+const Modal: React.FC<iModal> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
@@ -14,10 +15,17 @@ const Modal: React.FC = () => {
         LOGIN
       </button>
       <div
-        className={isOpen ? styles.modal__box_active : styles.modal__box_closed}
+        onClick={handleOpen}
+        className={
+          isOpen ? styles.modal__window_active : styles.modal__window_closed
+        }
       >
-        <div>
-          <p>GOOGLE LOGIN IN</p>
+        <div
+          className={
+            isOpen ? styles.modal__box_active : styles.modal__box_closed
+          }
+        >
+          {children}
         </div>
       </div>
     </>
