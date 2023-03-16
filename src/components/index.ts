@@ -8,3 +8,4 @@ export { Button } from './Button';
 export { Header } from './Header';
 export { Modal } from './Modal';
 export { Login } from './Login';
+export { ScrollToTop } from './ScrollToTop';

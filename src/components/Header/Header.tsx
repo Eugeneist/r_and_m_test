@@ -10,6 +10,8 @@ const Header: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const login = useSelector((state: RootState) => state.loginReducers.user);
 
+  console.log(login);
+
   const handleLogout = () => {
     dispatch(logout());
   };
@@ -25,7 +27,7 @@ const Header: React.FC = () => {
           </NavLink>
         </div>
         <div className={styles.header__login}>
-          {login != null ? (
+          {login !== null && login.length > 0 ? (
             <div className={styles.header__loginbox}>
               <div className={styles.header__profile}>
                 <img

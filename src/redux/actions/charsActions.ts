@@ -7,7 +7,6 @@ import {
   LOGOUT,
 } from '../actionTypes/charsTypes';
 import { AxiosResponse } from 'axios';
-import { iLogin } from '../../interfaces/interfaces';
 
 export const addToChars = (data: AxiosResponse) => {
   return {
