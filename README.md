@@ -1,46 +1,15 @@
-# Getting Started with Create React App
+Додаток <b>"Rick and Morty"</b>.
+Використане <b>API https://rickandmortyapi.com/ </b>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Додаток виконаний з використанням бібліотеки <b>ReactJS</b> та мови програмування <b>TypeScript</b>. Були використані такі інструменти: <b>AXIOS</b> для запитів до API, <b>React Router</b> для маршрутизації додатку, <b>Redux</b> для керуванням станом додатку та його запитів, <b>SCSS модулі</b> для написання стилів зовнішнього вигляду, <b>react-oauth</b> невеличка бібліотечка для авторизації через Google, <b>jwt-decode</b> для декодування токенів від авторизації.
 
-## Available Scripts
+Реалізовані: адаптивний дизайн (десктоп, планшети та мобільні пристрої), сторінка пошуку персонажів, індивідуальна сторінка персонажу, поле вводу, через яке можна шукати персонажа за його ім'ям, навігація додатку між сторінками через кнопки, авторизація через Google, зберігання стану додатку через Local Storage.
 
-In the project directory, you can run:
+Ознайомитись з додатком можна онлайн за посиланням: eugeneist.github.io/r_and_m_test/
+Код додатку до Вашої уваги вище.
 
-### `npm start`
+Також можна запустити локально. Для цього треба:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1) Клонувати репозиторій собі на комп'ютер ( виконавши у терміналі команду: git clone git@github.com:Eugeneist/r_and_m_test.git ); 
+2) Запустити додаток за допомогою команди npm run start Додаток буде доступний за адресою: http://localhost:3000/ у браузері.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
